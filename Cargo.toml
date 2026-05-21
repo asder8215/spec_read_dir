@@ -1,0 +1,18 @@
+[package]
+name = "spec_read_dir"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+libc = "0.2.186"
+
+[dev-dependencies]
+criterion = {version = "^0.6.0"}
+
+[[bench]]
+name = "spec_read_dir"
+harness = false
+
+[[bench]]
+name = "std_read_dir"
+harness = false
